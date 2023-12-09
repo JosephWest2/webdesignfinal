@@ -1,0 +1,57 @@
+@media screen and (max-width: 47em) {
+    .navBar {
+        flex-direction: column;
+    }
+    .navLink {
+        border-bottom: 1px solid #c8c8c8;
+        text-align: center;
+    }
+    .wrapper {
+        margin: 0;
+    }
+    .mainWrapper {
+        flex-direction: column;
+        gap: 1em;
+    }
+    main {
+        width: auto;
+        border-radius: 0;
+    }
+    aside {
+        width: auto;
+        border-radius: 0;
+    }
+}
+
+
+@media screen and (max-width: 30em) {
+    .bookItem {
+        flex-direction: column;
+    }
+    .bookDescription {
+        width: 100%;
+    }
+    .bookImage {
+        width: 100%;
+    }
+    .imageLinkContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerTextLinkContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerTextLink {
+        border: none;
+    }
+    form {
+        grid-template-columns: 100%;
+    }
+    .detailsGrid {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .detailsGridItem {
+        overflow:scroll;
+    }
+}

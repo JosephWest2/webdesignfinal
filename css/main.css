@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-image: linear-gradient(to bottom, aliceBlue, steelBlue);
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 1.3em;
+    color: dimgrey;
+    text-shadow: 2px 2px 2px lightgray;
+    text-align: center;
+    padding: 1em;
+}
+
+
+.wrapper {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 55em;
+    max-width: 100vw;
+    height: auto;
+    background-color: white;
+    padding: 1em;
+
+    box-shadow: 0 0 8px black;
+}
+
+.banner {
+    height: 150px;
+}
+
+.banner > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navBar {
+    border: 1px solid #c8c8c8;
+    border-top: 3px solid blue;
+    display: flex;
+    flex-direction: row;
+    background-color: #f7f7f7;
+    margin-top: 1em;
+}
+
+.navLink {
+    border-right: 1px solid #c8c8c8;
+    padding: 1em;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+    background-color: #f7f7f7;
+}
+
+.navLink:hover {
+    background-color: blue;
+    color: #f7f7f7;
+}
+
+.mainWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main {
+    padding: 1em;
+    width: 62.5%;
+    border-radius: 15px;
+    background-color: #cccccc;
+
+}
+
+main a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main a:visited {
+    color: magenta;
+}
+
+ul {
+    padding: 1em;
+}
+li {
+    margin-left: 1em;
+}
+
+.booksList {
+    
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookItem {
+    border-top: 1px solid grey;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1em;
+    gap: 1em;
+}
+.bookImage {
+    display: block;
+    text-decoration: none;
+
+    width: 50%;
+}
+.bookImage > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.bookDescription {
+    width: 50%;
+}
+
+aside {
+    height: fit-content;
+    padding: 1em;
+    width: 28%;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    
+}
+
+aside h2 {
+    color: darkblue;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+}
+
+aside a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+.booksLinkList {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+footer {
+    margin-top: 2em;
+    border-top: 1px solid dimgrey;
+    color: dimgrey;
+    font-size: small;
+
+}
+
+.imageLinkContainer {
+    padding: 1em;
+    gap: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imageLink {
+    display: block;
+    width: 5em;
+    height: 5em;
+    border: 1px solid lightgrey;
+    background-color: #f7f7f7;
+    border-radius: 100%;
+}
+.imageLink:hover {
+    opacity: 70%;
+}
+
+.imageLink > img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+.footerTextLinkContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+.footerTextLink {
+    text-decoration: none;
+    padding-right: 1em;
+    border-right: 1px solid lightgrey;
+}
+.footerTextLink:last-child {
+    border-right: none;
+}
+.footerTextLink:hover {
+    text-decoration: underline;
+}
+.copyright {
+    text-align: center;
+    padding-top: 1em;
+}
+
+h3 {
+    color: dimgrey;
+    font-size: 0.8em;
+    padding-bottom: 1em;
+}
+
+.detailsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: white;
+}
+.detailsGridItem {
+    padding: 0.2em;
+    border: 1px solid rgb(56, 159, 255);
+}
+
+.headerRow {
+    background-color: rgb(56, 159, 255);
+    color: white;
+}
+
+.evenRow {
+    background-color: rgb(183, 221, 255);
+}
+.contactHeader {
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+form {
+    background-color: white;
+    display: grid;
+    padding: 1em;
+    gap:0.5em;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    
+}
+
+textarea {
+    resize: vertical;
+}
+.contactRadioDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.inputSubmit {
+    background-image: linear-gradient(to bottom, steelBlue, blue);
+    border: 1px solid black;
+    padding: 0.8em;
+    border-radius: 0.6em;
+    color: white;
+    font-size: 1em;
+}
+.inputSubmit:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
